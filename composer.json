@@ -1,18 +1,16 @@
 {
-    "name": "hoavu/buoi4",
-
+    "name": "hoavu/assignment_2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
     "authors": [
         {
-            "name": "congvcph28670",
-            "email": "congvcph28670@fpt.edu.vn"
+            "name": "Vu Chi Doanh",
+            "email": "vuchidoanh2003@gmail.com"
         }
     ],
-
-    "require": {},
-
-    "autoload": {
-        "psr-4":{
-            "App\\":"app/"
-        }
-    }
+    "require": {}
 }
+

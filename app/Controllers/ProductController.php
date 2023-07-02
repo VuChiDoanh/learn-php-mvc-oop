@@ -12,7 +12,7 @@ class ProductController extends Controller
     {
         if ($_SESSION['role'] == 'admin') {
         } else {
-            header('location: /404');
+            header('location: 404');
         }
     }
     public function index()
@@ -49,7 +49,7 @@ class ProductController extends Controller
         //Insert
         $product = new ProductModel();
         $product->insert($p);
-        header("location:/products");
+        header("location:products");
         exit;
     }
     public function show(Request $request)
@@ -76,7 +76,7 @@ class ProductController extends Controller
         }
         $p = new ProductModel();
         $p->update($data['id'], $data);
-        header("location: /products");
+        header("location: products");
         exit;
     }
     public function delete(Request $request)
@@ -85,6 +85,6 @@ class ProductController extends Controller
         $p = new ProductModel();
         $p->delete($id);
         setcookie('message', 'xoa du lieu thanh cong', time() + 1);
-        header("location:/products");
+        header("location:products");
     }
 }

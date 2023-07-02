@@ -1,5 +1,6 @@
 <?php
 session_start();
+const ROOT_PATH = '/PHP2/assignment_gd2_php2_congvcph28670/assignment_2/public/';
 
 use App\Controllers\ProductController;
 use App\Controllers\CategoryController;
@@ -14,6 +15,8 @@ require_once __DIR__ . "/../vendor/autoload.php";
 $router = new Router;
 
 //site
+
+Router::get('/', [SiteController::class, 'index']);
 Router::get('/site', [SiteController::class, 'index']);
 Router::get('/about', [SiteController::class, 'about']);
 Router::get('/contact', [SiteController::class, 'contact']);

@@ -272,7 +272,7 @@ overflow: hidden;
 
 
 
-                        <a href="/logout"><i class="fa-solid fa-arrow-right-from-bracket text-xl mt-2"></i></a>
+                        <a href="logout"><i class="fa-solid fa-arrow-right-from-bracket text-xl mt-2"></i></a>
                     <?php else : ?>
                         <!-- drop down đăng nhập -->
                         <div class="dropdown_dangnhap ">
@@ -281,7 +281,7 @@ overflow: hidden;
                                 <div class="login-page">
                                     <div class="form ">
                                         <h1 class="uppercase font-medium text-[18px] mb-4 border-b-2">Đăng nhập tài khoản</h1>
-                                        <form class="login-form" name="" action="/site" method="post">
+                                        <form class="login-form" name="" action="site" method="post">
                                             <p class="text-left pl-4 pb-1">Tài khoản :</p>
                                             <input type="text" name="ten" value="" placeholder="Nhập tên tài khoản" autocomplete="off">
                                             <div id="loiTaikhoan" class="text-left mb-4 ml-4" style="color: red;"><?php if (isset($error)) {
@@ -295,7 +295,7 @@ overflow: hidden;
                                                                                                                     } ?></div>
 
                                             <button type="submit" class="submit">login</button>
-                                            <p class="message">Chưa có tài khoản ? Đăng ký tại <a href="/register" class="">ĐÂY</a></p>
+                                            <p class="message">Chưa có tài khoản ? Đăng ký tại <a href="register" class="">ĐÂY</a></p>
                                         </form>
                                     </div>
                                 </div>
@@ -317,14 +317,14 @@ overflow: hidden;
                 <div class="menu">
                     <ul class="flex m-0 p-0 space-x-11 justify-between pl-2 ">
                         <li>
-                            <a href="/site" class="font-medium block py-4 hover:text-red-500 font-medium">Home</a>
+                            <a href="site" class="font-medium block py-4 hover:text-red-500 font-medium">Home</a>
                         </li>
                         <li>
-                            <a href="/shop" class="font-medium block py-4 hover:text-red-500 font-medium">Shop</a>
+                            <a href="shop" class="font-medium block py-4 hover:text-red-500 font-medium">Shop</a>
 
                         </li>
 
-                        <li class=""><a class="font-medium block py-4 hover:text-red-500 font-medium" href="/about">Giới thiệu</a></li>
+                        <li class=""><a class="font-medium block py-4 hover:text-red-500 font-medium" href="about">Giới thiệu</a></li>
 
                     </ul>`
                 </div>

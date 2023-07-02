@@ -12,7 +12,7 @@ class CategoryController extends Controller
     {
         if ($_SESSION['role'] == 'admin') {
         } else {
-            header('location: /404');
+            header('location: 404');
         }
     }
     public function index()
@@ -42,7 +42,7 @@ class CategoryController extends Controller
         //Insert
         $category = new CategoryModel();
         $category->insert($p);
-        header("location:/categories");
+        header("location:categories");
         exit;
     }
     public function show(Request $request)
@@ -63,7 +63,7 @@ class CategoryController extends Controller
         $data = $request->getBody();
         $p = new CategoryModel();
         $p->update($data['id'], $data);
-        header("location: /categories");
+        header("location: categories");
         exit;
     }
     public function delete(Request $request)
@@ -72,6 +72,6 @@ class CategoryController extends Controller
         $p = new CategoryModel();
         $p->delete($id);
         setcookie('message', 'xoa du lieu thanh cong', time() + 1);
-        header("location:/categories");
+        header("location:categories");
     }
 }

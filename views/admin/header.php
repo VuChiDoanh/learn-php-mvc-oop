@@ -75,11 +75,11 @@
     <div class=" mt-20 border-b-2 boder-gray-900">
       <ul class="">
         <div class="flex-col text-white font-medium text-lx ">
-          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-y-2 "><a href="/categories">Loại Hàng</a></li>
-          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="/products">Mặt hàng</a></li>
-          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="/users">Tài khoản</a></li>
-          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="/invoice">Đơn hàng</a></li>
-          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-1 "><a href="/logout">Đăng xuất</a></li>
+          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-y-2 "><a href="categories">Loại Hàng</a></li>
+          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="products">Mặt hàng</a></li>
+          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="users">Tài khoản</a></li>
+          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-2 "><a href="invoice">Đơn hàng</a></li>
+          <li class="item-center text-center py-10 px-auto  hover:bg-gray-900 border-b-1 "><a href="ogout">Đăng xuất</a></li>
         </div>
       </ul>
     </div>

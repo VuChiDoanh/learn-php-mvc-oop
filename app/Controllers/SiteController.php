@@ -25,7 +25,7 @@ class SiteController extends Controller
         $categories = CategoryModel::all();
 
         return $this->view(
-            '/detail',
+            'detail',
             [
                 'product' => $product,
                 'categories' => $categories,
@@ -39,7 +39,7 @@ class SiteController extends Controller
         $categories = CategoryModel::all();
 
         return $this->view(
-            '/shop',
+            'shop',
             [
                 'products' => $products,
                 'categories' => $categories,
@@ -70,9 +70,9 @@ class SiteController extends Controller
             $_SESSION['id'] = $person[0]->id;
             if ($person[0]->role_id == 1) {
                 $_SESSION['role'] = 'admin';
-                header('location: /products');
+                header('location: products');
             } else {
-                header('location: /site');
+                header('location: site');
             }
         } else {
             $error = 'Tài khoản hoặc mật khẩu sai!';
@@ -85,6 +85,6 @@ class SiteController extends Controller
     public function logout()
     {
         session_destroy();
-        header('location: /site');
+        header('location: site');
     }
 }

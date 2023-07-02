@@ -44,11 +44,11 @@
                 <?php foreach ($products as $product) : ?>
                     <div class="border-2 hover:shadow-xl">
                         <div class="block relative overflow-hidden group pb-2">
-                            <a href="/detail?id=<?= $product->id ?>"><img class="h-[500px] w-[400px] border border-gray-700 object-cover" src="images/<?= $product->anh ?>" alt="chưa có"></a>
+                            <a href="detail?id=<?= $product->id ?>"><img class="h-[500px] w-[400px] border border-gray-700 object-cover" src="images/<?= $product->anh ?>" alt="chưa có"></a>
                             <span class="absolute top-10 left-0 bg-[#1E2832] text-white px-3 py-2"><?= $product->sale ?>%</span>
                         </div>
                         <span class="mx-2">
-                            <a href="/detail?id=<?= $product->id ?>" class="font-medium text-[16px] leading-[21.79px] hover: "><?= $product->ten ?></a>
+                            <a href="detail?id=<?= $product->id ?>" class="font-medium text-[16px] leading-[21.79px] hover: "><?= $product->ten ?></a>
                             <div class="flex justify-between mx-2">
                                 <a href="">
                                     <p class="font-medium text-[16px] leading-[21.79px] hover:text-[#FF6F61]">

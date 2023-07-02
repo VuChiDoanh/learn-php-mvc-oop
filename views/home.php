@@ -32,13 +32,13 @@
 
             <?php foreach ($products as $product) : ?>
                 <div>
-                    <a href="/detail?id=<?= $product->id ?>">
+                    <a href="detail?id=<?= $product->id ?>">
                         <div class="block relative overflow-hidden group pb-2">
                             <img class="h-[400px] w-[300px] border border-gray-700 object-cover" src="images/<?= $product->anh ?>" alt="chưa có ảnh" />
                             <span class="absolute top-10 left-0 bg-[#FF6F61] text-white px-3 py-2">Hot</span>
                         </div>
                         <span>
-                            <a href="/detail?id=<?= $product->id ?>" class="font-medium text-[16px] leading-[21.79px] hover:text-[red]"><?= $product->ten ?></a>
+                            <a href="detail?id=<?= $product->id ?>" class="font-medium text-[16px] leading-[21.79px] hover:text-[red]"><?= $product->ten ?></a>
                             <div class="flex justify-between">
                                 <p class="font-medium text-[16px] leading-[21.79px] hover:text-[#FF6F61]">
                                     <?= $product->gia ?> VNĐ
@@ -66,13 +66,13 @@
 
             <?php foreach ($bestsellers as $best) : ?>
                 <div>
-                    <a href="/detail?id=<?= $best->id ?>">
+                    <a href="detail?id=<?= $best->id ?>">
                         <div class="block relative overflow-hidden group pb-2">
                             <img class="h-[400px] w-[300px] border border-gray-700 object-cover" src="images/<?= $best->anh ?>" alt="chưa có ảnh" />
                             <span class="absolute top-10 left-0 bg-[#FF6F61] text-white px-3 py-2">Hot</span>
                         </div>
                         <span>
-                            <a href="/detail?id=<?= $best->id ?>" class="font-medium text-[16px] leading-[21.79px] hover:text-[red]"><?= $best->ten ?></a>
+                            <a href="detail?id=<?= $best->id ?>" class="font-medium text-[16px] leading-[21.79px] hover:text-[red]"><?= $best->ten ?></a>
                             <div class="flex justify-between">
                                 <p class="font-medium text-[16px] leading-[21.79px] hover:text-[#FF6F61]">
                                     <?= $best->gia ?> VNĐ

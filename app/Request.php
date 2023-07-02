@@ -7,7 +7,7 @@ class Request
     public function getPath()
     {
         $path = $_SERVER['REQUEST_URI'] ?? '/';
-        $path = str_replace('/PHP2/we17311_php2/bai4/public/', '/', $path);
+        $path = str_replace(ROOT_PATH, '/', $path);
         $position = strpos($path, '?');
         if ($position) {
             $path = substr($path, 0, $position);
