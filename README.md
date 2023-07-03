@@ -1,4 +1,4 @@
-
+NOTE: admin account: vuchidoanh - pass: 123456789
 Learn PHP in MVC and OOP 
 
 Change ROOT_PATH in public/index.php to your file address or or your webssite link.
